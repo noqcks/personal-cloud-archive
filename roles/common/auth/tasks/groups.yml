@@ -1,0 +1,16 @@
+---
+- name: "Group | {{ item.key }}"
+  group:
+    state: present
+    name: "{{ item.key }}"
+    gid: "{{ item.value }}"
+  with_dict: auth_groups_core
+
+- name: "Group | {{ item.key }}"
+  group:
+    state: present
+    name: "{{ item.key }}"
+    gid: "{{ item.value }}"
+  with_dict: auth_groups_vendors
+  tags:
+    - create_vendor_group

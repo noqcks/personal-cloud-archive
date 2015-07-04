@@ -1,0 +1,6 @@
+---
+required_users: []
+required_sudoers: []
+allow_required_sudoers_in_environments:
+  - next
+  - development

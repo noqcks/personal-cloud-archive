@@ -1,0 +1,55 @@
+---
+- name: Enable Service | haproxy
+  lineinfile:
+    state: present
+    dest: /etc/default/haproxy
+    regexp: 'ENABLED\='
+    line: 'ENABLED=1'
+  tags:
+    - haproxy
+
+- name: Directories Exists
+  file:
+    state: directory
+    path: "{{ item }}"
+    owner: "{{ haproxy_user }}"
+    group: wcadmin
+    mode: 0775
+  with_items:
+    - "{{ haproxy_runtime_root }}"
+    - /etc/haproxy/fragments.d
+  tags:
+    - directory-structure
+    - runtime-data
+    - haproxy
+
+- name: Upload Config Fragments | haproxy
+  template:
+    src: "etc/haproxy/fragments.d/{{ item.path }}"
+    dest: "/etc/haproxy/fragments.d/{{ item.path }}"
+  notify: Reload Service | haproxy
+  when: "{{ item.when | default (True) }}"
+  with_items:
+    - { path: 00-global }
+    - { path: 01-defaults }
+    - { path: 02-error-handling, when: haproxy_error_handling_enabled }
+    - { path: 03-stats,          when: haproxy_stats_enabled }
+    - { path: 80-application,    when: haproxy_standard_configuration }
+    - { path: 81-deployment,     when: haproxy_autodeploy_passthrough_enabled }
+    - { path: 443-https,         when: haproxy_ssl_enabled }
+    - { path: 65536-backend-application }
+    - { path: 65537-backend-localhost }
+  tags:
+    - configuration
+    - fragment-configuration
+    - haproxy
+
+- name: Assemble Config Fragments | haproxy
+  assemble:
+    src: /etc/haproxy/fragments.d
+    dest: /etc/haproxy/haproxy.cfg
+    delimiter: '### START FRAGMENT ###'
+  tags:
+    - configuration
+    - fragment-configuration
+    - haproxy

@@ -1,0 +1,7 @@
+---
+- name: Reload Service | SSH
+  service:
+    state: reloaded
+    name: ssh
+  tags:
+    - ssh

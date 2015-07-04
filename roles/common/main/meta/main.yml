@@ -1,0 +1,9 @@
+---
+dependencies:
+  - role: common/bootstrap
+  - role: telusdigital.python
+  - role: common/auth
+  - role: telusdigital.openssh
+    openssh_server: yes
+  - role: telusdigital.fish
+  - role: telusdigital.zeromq

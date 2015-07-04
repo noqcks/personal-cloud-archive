@@ -1,0 +1,8 @@
+---
+- name: Upload script to query AWS
+  file:
+    src: usr/local/bin/ask-amazon-for
+    path: /usr/local/bin/ask-amazon-for
+    owner: root
+    group: wcadmin
+    mode: 0770

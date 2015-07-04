@@ -1,0 +1,20 @@
+---
+- name: Install Packages | apt
+  apt:
+    state: latest
+    pkg: "{{ item }}"
+  with_items:
+    - build-essential
+    - cpanminus
+    - emacs24-nox
+    - htop
+    - tmux
+    - zsh
+  tags:
+    - software-installation
+    - using-apt
+
+- name: Install packages | cpanm
+  cpanm:
+    name: 'App::Ack'
+    notest: yes

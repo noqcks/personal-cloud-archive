@@ -1,0 +1,22 @@
+---
+# - name: "Create ext4 filesystem on {{ instance_store_device }}"
+#   filesystem:
+#      dev: /dev/xvda2
+#      fstype: ext3
+
+- name: Directory Exists | /data
+  file:
+    state: directory
+    path: /data
+  tags:
+    - directory-structure
+
+- name: "Mount {{ instance_store_device }} to /data"
+  mount:
+    state: mounted
+    src: "{{ instance_store_device }}"
+    fstype: ext3
+    name: /data
+  when: environment_tier in ['none']
+  tags:
+    - mount-volume

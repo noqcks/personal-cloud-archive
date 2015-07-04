@@ -1,0 +1,4 @@
+AWS_API_ENDPOINT='http://169.254.169.254/'
+
+wget -q -O - $AWS_API_ENDPOINT/$1/; echo
+

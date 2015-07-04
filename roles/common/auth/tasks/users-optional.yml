@@ -1,0 +1,703 @@
+---
+- include: create-user.yml
+  name: 'abraini'
+  id: '3002006'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Andrew Braini (Nascent Digital) - Vancouver'
+  when: "'abraini' in required_users"
+  tags:
+    - abraini
+
+- include: create-user.yml
+  name: 'mkretz'
+  id: '3002007'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Mike Kretz (Nascent Digital)'
+  when: "'mkretz' in required_users"
+  tags:
+    - mkretz
+
+- include: create-user.yml
+  name: 'adibattista'
+  id: '3002008'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Alex Dibattista (Nascent Digital) - Vancouver'
+  when: "'adibattista' in required_users"
+  tags:
+    - adibattista
+
+- include: create-user.yml
+  name: 'nchung'
+  id: '3002009'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Nicole Chung (Nascent Digital) - Vancouver'
+  when: "'nchung' in required_users"
+  tags:
+    - nchung
+
+- include: create-user.yml
+  name: 'gleung'
+  id: '3002010'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Gifford Leung (Nascent Digital) - Vancouver'
+  when: "'gleung' in required_users"
+  tags:
+    - gleung
+
+- include: create-user.yml
+  name: 'ayhap'
+  id: '3002011'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Adam Yhap (Nascent Digital) - Vancouver'
+  when: "'ayhap' in required_users"
+  tags:
+    - ayhap
+
+- include: create-user.yml
+  name: 'btrinh'
+  id: '3002012'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Bernie Trinh (Nascent Digital)'
+  when: "'btrinh' in required_users"
+  tags:
+    - btrinh
+
+- include: create-user.yml
+  name: 'dchang'
+  id: '3002013'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'David Chang (Nascent Digital)'
+  when: "'dchang' in required_users"
+  tags:
+    - dchang
+
+- include: create-user.yml
+  name: 'pmarshall'
+  id: '3002014'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Peter Marshall (Nascent Digital)'
+  when: "'pmarshall' in required_users"
+  tags:
+    - pmarshall
+
+- include: create-user.yml
+  name: 'tthornton'
+  id: '3002015'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Tessa Thornton (Nascent Digital)'
+  when: "'tthornton' in required_users"
+  tags:
+    - tthornton
+
+- include: create-user.yml
+  name: 'clawrence'
+  id: '3002016'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Camille Lawrence (Nascent Digital)'
+  when: "'clawrence' in required_users"
+  tags:
+    - clawrence
+
+- include: create-user.yml
+  name: 'jlord'
+  id: '3002017'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Julian Lord (Nascent Digital)'
+  when: "'jlord' in required_users"
+  tags:
+    - jlord
+
+- include: create-user.yml
+  name: 'kgrimsley'
+  id: '3002018'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Kevin Grimsley (Nascent Digital)'
+  when: "'kgrimsley' in required_users"
+  tags:
+    - kgrimsley
+
+- include: create-user.yml
+  name: 'ahinton'
+  id: '3002019'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Andrew Hinton (Nascent Digital)'
+  when: "'ahinton' in required_users"
+  tags:
+    - ahinton
+
+- include: create-user.yml
+  name: 'oschmitt'
+  id: '3002020'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Olivier Schmitt (Nascent Digital)'
+  when: "'oschmitt' in required_users"
+  tags:
+    - oschmitt
+
+- include: create-user.yml
+  name: 'skeulen'
+  id: '3002021'
+  other_groups: 'wcdevelop,nascent'
+  comment: 'Shane Keulen (Nascent Digital)'
+  when: "'skeulen' in required_users"
+  tags:
+    - skeulen
+
+- include: create-user.yml
+  name: 'akong'
+  id: '3006001'
+  other_groups: 'wcdevelop,vibrant'
+  comment: 'Alex Kong (Vibrant)'
+  when: "'akong' in required_users"
+  tags:
+    - akong
+
+- include: create-user.yml
+  name: 'mtang'
+  id: '3006002'
+  other_groups: 'wcdevelop,vibrant'
+  comment: 'Ming Tang (Vibrant)'
+  when: "'mtang' in required_users"
+  tags:
+    - mtang
+
+- include: create-user.yml
+  name: 'cng'
+  id: '3005001'
+  other_groups: 'wcdevelop,poundandgrain'
+  comment: 'Chris Ng (Pound & Grain) - Vancouver'
+  when: "'cng' in required_users"
+  tags:
+    - cng
+
+- include: create-user.yml
+  name: 'riula'
+  id: '3011001'
+  other_groups: 'wcdevelop,coconutcalendar'
+  comment: 'Romeo Iula (Coconut Calendar)'
+  when: "'riula' in required_users"
+  tags:
+    - riula
+
+- include: create-user.yml
+  name: 'tmarien'
+  id: '3011002'
+  other_groups: 'wcdevelop,coconutcalendar'
+  comment: 'Tyler Marien (Coconut Calendar)'
+  when: "'tmarien' in required_users"
+  tags:
+    - tmarien
+
+- include: create-user.yml
+  name: 'dbates'
+  id: '3011003'
+  other_groups: 'wcdevelop,coconutcalendar'
+  comment: 'Debby Bates (Coconut Calendar)'
+  when: "'dbates' in required_users"
+  tags:
+    - dbates
+
+- include: create-user.yml
+  name: 'jsheridan'
+  id: '3009001'
+  other_groups: 'wcdevelop,igloo'
+  comment: 'James Sheridan (Igloo Vision)'
+  when: "'jsheridan' in required_users"
+  tags:
+    - jsheridan
+
+- include: create-user.yml
+  name: 'mapted'
+  id: '3007001'
+  other_groups: 'wcdevelop,powershifter'
+  comment: 'Mike Apted (PowerSHIFTER)'
+  when: "'mapted' in required_users"
+  tags:
+    - mapted
+
+- include: create-user.yml
+  name: 'mwalker'
+  id: '3007002'
+  other_groups: 'wcdevelop,powershifter'
+  comment: 'Mike Walker (PowerSHIFTER)'
+  when: "'mwalker' in required_users"
+  tags:
+    - mwalker
+
+- include: create-user.yml
+  name: 'nmarshall'
+  id: '3007003'
+  other_groups: 'wcdevelop,powershifter'
+  comment: 'Nathan Marshall (PowerSHIFTER) - Vancouver'
+  when: "'nmarshall' in required_users"
+  tags:
+    - nmarshall
+
+- include: create-user.yml
+  name: 'sbond'
+  id: '3007004'
+  other_groups: 'wcdevelop,powershifter'
+  comment: 'Steve Bond (PowerSHIFTER) - Vancouver'
+  when: "'sbond' in required_users"
+  tags:
+    - sbond
+
+- include: create-user.yml
+  name: 'credmond'
+  id: '3007005'
+  other_groups: 'wcdevelop,powershifter'
+  comment: 'Cody Redmond (PowerSHIFTER) - Vancouver'
+  when: "'credmond' in required_users"
+  tags:
+    - credmond
+
+- include: create-user.yml
+  name: 'handersen'
+  id: '3007006'
+  other_groups: 'wcdevelop,powershifter'
+  comment: 'Hans Andersen (PowerSHIFTER) - Vancouver'
+  when: "'handersen' in required_users"
+  tags:
+    - handersen
+
+- include: create-user.yml
+  name: 'pkandathil'
+  id: '3001001'
+  other_groups: 'wcdevelop,techsamurais'
+  shell: '/usr/bin/zsh'
+  comment: 'Prashant Kandathil (Tech Samurais) - Vancouver'
+  when: "'pkandathil' in required_users"
+  tags:
+    - pkandathil
+
+- include: create-user.yml
+  name: 'rfelix'
+  id: '3001002'
+  other_groups: 'wcdevelop,techsamurais'
+  comment: 'Rob Felix (Tech Samurais) - Vancouver'
+  when: "'rfelix' in required_users"
+  tags:
+    - rfelix
+
+- include: create-user.yml
+  name: 'lgeck'
+  id: '3001003'
+  other_groups: 'wcdevelop,techsamurais'
+  comment: 'Layne Geck (Tech Samurais) - Vancouver'
+  when: "'lgeck' in required_users"
+  tags:
+    - lgeck
+
+- include: create-user.yml
+  name: 'sbarre'
+  id: '3008001'
+  other_groups: 'wcdevelop,havas'
+  comment: 'Sebastien Barre (Havas)'
+  when: "'sbarre' in required_users"
+  tags:
+    - sbarre
+
+- include: create-user.yml
+  name: 'tvogel'
+  id: '3003001'
+  other_groups: 'wcdevelop,wmode'
+  comment: 'Tom Vogel (Wmode) - Vancouver'
+  when: "'tvogel' in required_users"
+  tags:
+    - tvogel
+
+- include: create-user.yml
+  name: 'knunweiler'
+  id: '3003003'
+  other_groups: 'wcdevelop,wmode'
+  comment: 'Kellie Nunweiler (Wmode) - Calgary'
+  when: "'knunweiler' in required_users"
+  tags:
+    - knunweiler
+
+- include: create-user.yml
+  name: 'mhidalgo'
+  id: '3003004'
+  other_groups: 'wcdevelop,wmode'
+  comment: 'Marcia Hidalgo (Wmode) - Calgary'
+  when: "'mhidalgo' in required_users"
+  tags:
+    - mhidalgo
+
+- include: create-user.yml
+  name: 'jklancic'
+  id: '3003005'
+  other_groups: 'wcdevelop,wmode'
+  comment: 'Jernej Klancic (Wmode) - Calgary'
+  when: "'jklancic' in required_users"
+  tags:
+    - jklancic
+
+- include: create-user.yml
+  name: 'rcheng'
+  id: '3003006'
+  other_groups: 'wcdevelop,wmode'
+  comment: 'Ryan Cheng (Wmode) - Calgary'
+  when: "'rcheng' in required_users"
+  tags:
+    - rcheng
+
+- include: create-user.yml
+  name: 'sfloropoulos'
+  id: '3003008'
+  other_groups: 'wcdevelop,wmode'
+  comment: 'Spiro Floropoulos (Wmode) - Calgary'
+  when: "'sfloropoulos' in required_users"
+  tags:
+    - sfloropoulos
+
+- include: create-user.yml
+  name: 'tkinsella'
+  id: '3003009'
+  other_groups: 'wcdevelop,wmode'
+  comment: 'Troy Kinsella (Wmode) - Winlaw'
+  when: "'tkinsella' in required_users"
+  tags:
+    - tkinsella
+
+- include: create-user.yml
+  name: 'agoguen'
+  id: '3003010'
+  other_groups: 'wcdevelop,wmode'
+  comment: 'Andrew Goguen (Wmode) - Calgary'
+  when: "'agoguen' in required_users"
+  tags:
+    - agoguen
+
+- include: create-user.yml
+  name: 'x152222'
+  id: '2152222'
+  other_groups: 'wcdevelop'
+  comment: 'Anthony Trad (TELUS digital)- Vancouver'
+  when: "'x152222' in required_users"
+  tags:
+    - x152222
+
+- include: create-user.yml
+  name: 'x168249'
+  id: '2168249'
+  other_groups: 'wcdevelop'
+  comment: 'Ken Kwasnicki (TELUS digital)- Vancouver'
+  when: "'x168249' in required_users"
+  tags:
+    - x168249
+
+- include: create-user.yml
+  name: 'x157844'
+  id: '2157844'
+  other_groups: 'wcdevelop'
+  comment: 'Laurie Gao (TELUS digital) - Vancouver'
+  when: "'x157844' in required_users"
+  tags:
+    - x157844
+
+- include: create-user.yml
+  name: 'x163919'
+  id: '2163919'
+  other_groups: 'wcdevelop'
+  comment: 'Laura Cabrera (TELUS digital) - Vancouver'
+  when: "'x163919' in required_users"
+
+- include: create-user.yml
+  name: 'x173034'
+  id: '2173034'
+  other_groups: 'wcdevelop'
+  shell: '/usr/bin/fish'
+  comment: 'Kinnan Kwok (TELUS digital) - Vancouver'
+  when: "'x173034' in required_users"
+  tags:
+    - x173034
+
+- include: create-user.yml
+  name: 'x173035'
+  id: '2173035'
+  other_groups: 'wcdevelop,wcadmin'
+  comment: 'Ben Visser (TELUS digital) - Vancouver'
+  shell: '/usr/bin/zsh'
+  when: "'x173035' in required_users"
+  tags:
+    - x173035
+
+- include: create-user.yml
+  name: 'x173731'
+  id: '2173731'
+  other_groups: 'wcdevelop'
+  comment: 'Erich Welz (TELUS digital) - Toronto'
+  shell: '/usr/bin/zsh'
+  when: "'x173731' in required_users"
+  tags:
+    - x173731
+
+- include: create-user.yml
+  name: 't898061'
+  id: '1898061'
+  other_groups: 'wcdevelop'
+  comment: 'Patrick Zhang (TELUS Digital) - Vancouver'
+  when: "'t898061' in required_users"
+  tags:
+    - t898061
+
+- include: create-user.yml
+  name: 'x167922'
+  id: '2167922'
+  other_groups: 'wcdevelop'
+  comment: 'Jonathan Shin (TELUS Digital) - Vancouver'
+  when: "'x167922' in required_users"
+  tags:
+    - x167922
+
+- include: create-user.yml
+  name: 't877523'
+  id: '1877523'
+  other_groups: 'wcdevelop'
+  comment: 'Mike Bunce (TELUS Digital) - Vancouver'
+  when: "'t877523' in required_users"
+  tags:
+    - t877523
+
+- include: create-user.yml
+  name: 't842266'
+  id: '1842266'
+  other_groups: 'wcdevelop'
+  comment: 'Ken Duffy (TELUS) - Vancouver'
+  when: "'t842266' in required_users"
+  tags:
+    - t842266
+
+- include: create-user.yml
+  name: 'x169748'
+  id: '1169748'
+  other_groups: 'wcdevelop'
+  comment: 'Isaiah Thiessen (TELUS) - Vancouver'
+  when: "'x169748' in required_users"
+  tags:
+    - x169748  
+
+- include: create-user.yml
+  name: 't819202'
+  id: '1819202'
+  other_groups: 'wcdevelop'
+  comment: 'Rick Foster (TELUS) - Toronto'
+  when: "'t819202' in required_users"
+  tags:
+    - t819202
+
+- include: create-user.yml
+  name: 't863020'
+  id: '1863020'
+  other_groups: 'wcdevelop'
+  comment: 'Kesava Kannan (TELUS) - Toronto'
+  when: "'t863020' in required_users"
+  tags:
+    - t863020
+
+- include: create-user.yml
+  name: 't842312'
+  id: '1842312'
+  other_groups: 'wcdevelop'
+  comment: 'Fred Caprilli (TELUS) - Toronto'
+  when: "'t842312' in required_users"
+  tags:
+    - t842312
+
+- include: create-user.yml
+  name: 't884939'
+  id: '1884939'
+  other_groups: 'wcdevelop'
+  comment: 'Jamie Weir (TELUS digital) - Toronto'
+  tags:
+    - t884939
+
+- include: create-user.yml
+  name: 'x169954'
+  id: '2169954'
+  other_groups: 'wcdevelop'
+  comment: 'Edmund Nopuente (TELUS Digital) - Toronto'
+  when: "'x169954' in required_users"
+  tags:
+    - x169954
+
+- include: create-user.yml
+  name: 'x122725'
+  id: '2122725'
+  other_groups: 'wcdevelop'
+  comment: 'Steven Harradine - developer access (TELUS Digital) - Toronto'
+  when: "'x122725' in required_users"
+  tags:
+    - x122725
+
+- include: create-user.yml
+  name: 'ci-bot'
+  id: '3012001'
+  other_groups: 'wcdevelop'
+  comment: 'Continuous Integration automaton'
+  when: "'ci-bot' in required_users"
+  tags:
+    - ci-bot
+
+- include: create-user.yml
+  name: 'tfrans'
+  id: '3012001'
+  other_groups: 'wcdevelop,domain7'
+  comment: 'Tyler Frans (Domain7) - Vancouver'
+  when: "'tfrans' in required_users"
+  tags:
+    - tfrans
+
+- include: create-user.yml
+  name: 'ljanocha'
+  id: '3012002'
+  other_groups: 'wcdevelop,domain7'
+  comment: 'Lance Janocha (Domain7) - Vancouver'
+  when: "'ljanocha' in required_users"
+  tags:
+    - ljanocha
+
+- include: create-user.yml
+  name: 'jgrunert'
+  id: '3004001'
+  other_groups: 'wcdevelop,acromedia'
+  comment: 'Jesse Grunert (Acromedia)'
+  when: "'jgrunert' in required_users"
+  tags:
+    - jgrunert
+
+- include: create-user.yml
+  name: 'bsharpe'
+  id: '3004002'
+  other_groups: 'wcdevelop,acromedia'
+  comment: 'Bryan Sharpe (Acromedia) - Vancouver'
+  when: "'bsharpe' in required_users"
+  tags:
+    - bsharpe
+
+- include: create-user.yml
+  name: 'gvollo'
+  id: '3004003'
+  other_groups: 'wcdevelop,acromedia'
+  comment: 'Gordon Vollo (Acromedia) - Vancouver'
+  when: "'gvollo' in required_users"
+  tags:
+    - gvollo
+
+- include: create-user.yml
+  name: 'lcordell'
+  id: '3004004'
+  other_groups: 'wcdevelop,acromedia'
+  comment: 'Les Cordell (Acromedia) - Vancouver'
+  when: "'lcordell' in required_users"
+  tags:
+    - lcordell
+
+- include: create-user.yml
+  name: 'smccabe'
+  id: '3004005'
+  other_groups: 'wcdevelop,acromedia'
+  comment: 'Shawn McCabe (Acromedia) - Kelowna'
+  when: "'smccabe' in required_users"
+  tags:
+    - smccabe
+
+- include: create-user.yml
+  name: 'ahaque'
+  id: '3013001'
+  other_groups: 'wcdevelop,graphicpeople'
+  comment: 'Ataul Haque (GraphicPeople) - Vancouver'
+  when: "'ahaque' in required_users"
+  tags:
+    - ahaque
+
+- include: create-user.yml
+  name: 'smorshed'
+  id: '3013002'
+  other_groups: 'wcdevelop,graphicpeople'
+  comment: 'Shishir Morshed (GraphicPeople) - Vancouver'
+  when: "'smorshed' in required_users"
+  tags:
+    - smorshed
+
+- include: create-user.yml
+  name: 'tkinnane'
+  id: '3010001'
+  other_groups: 'wcdevelop,owlandfox'
+  comment: 'Tim Kinnane (Owl and Fox)'
+  when: "'tkinnane' in required_users"
+  tags:
+    - tkinnane
+
+- include: create-user.yml
+  name: 'aratz'
+  id: '3014001'
+  other_groups: 'wcdevelop,procom'
+  comment: 'Alexander Ratz (Procom)'
+  when: "'aratz' in required_users"
+  tags:
+    - aratz
+
+- include: create-user.yml
+  name: 'jhawbrey'
+  id: '3015001'
+  other_groups: 'wcdevelop,publicishawkeye'
+  comment: 'Jason Awbrey (Publicis Hawkeye)'
+  when: "'jhawbrey' in required_users"
+  tags:
+    - jhawbrey
+
+- include: create-user.yml
+  name: 'bryandallen'
+  id: '3015002'
+  other_groups: 'wcdevelop,publicishawkeye'
+  comment: 'Bryan Allen (Publicis Hawkeye)'
+  when: "'bryandallen' in required_users"
+  tags:
+    - bryandallen
+
+- include: create-user.yml
+  name: 'ebtaylor'
+  id: '3015003'
+  other_groups: 'wcdevelop,publicishawkeye'
+  comment: 'Eric Taylor (Publicis Hawkeye)'
+  when: "'ebtaylor' in required_users"
+  tags:
+    - ebtaylor
+
+- include: create-user.yml
+  name: 'dennisdrei'
+  id: '3015004'
+  other_groups: 'wcdevelop,publicishawkeye'
+  comment: 'Dennis Dreissigmayer (Publicis Hawkeye)'
+  when: "'dennisdrei' in required_users"
+  tags:
+    - dennisdrei
+
+- include: create-user.yml
+  name: 'etallman'
+  id: '3015005'
+  other_groups: 'wcdevelop,publicishawkeye'
+  comment: 'Eric Tallman (Publicis Hawkeye)'
+  when: "'etallman' in required_users"
+  tags:
+    - etallman
+
+- include: create-user.yml
+  name: 'slgoodson'
+  id: '3015006'
+  other_groups: 'wcdevelop,publicishawkeye'
+  comment: 'Steven Goodson (Publicis Hawkeye)'
+  when: "'slgoodson' in required_users"
+  tags:
+    - slgoodson
+
+- include: create-user.yml
+  name: 'kolszewski'
+  id: '3015007'
+  other_groups: 'wcdevelop,publicishawkeye'
+  comment: 'Kris Olszewski (Publicis Hawkeye)'
+  when: "'kolszewski' in required_users"
+  tags:
+    - kolszewski

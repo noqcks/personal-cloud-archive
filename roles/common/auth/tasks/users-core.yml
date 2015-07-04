@@ -1,0 +1,84 @@
+---
+- include: create-user.yml 
+  name: 't838502' 
+  id: '1838502' 
+  other_groups: 'wcdevelop,wcadmin,wcmetrics' 
+  shell: '/usr/bin/fish' 
+  comment: 'Chris Olstrom (TELUS digital) - Vancouver'
+  tags:
+    - t838502
+
+- include: create-user.yml
+  name: 't071823'
+  id: '1071823'
+  other_groups: 'wcdevelop,wcadmin'
+  comment: 'Royston Tong (TELUS digital) - Vancouver'
+  tags:
+    - t071823
+
+- include: create-user.yml 
+  name: 't864014'
+  id: '1864014'
+  other_groups: 'wcdevelop,wcadmin'
+  comment: 'Travis Allan (TELUS digital) - Vancouver'
+  tags:
+    - t864014
+
+- include: create-user.yml
+  name: 't895608'
+  id: '1895608'
+  other_groups: 'wcdevelop,wcadmin'
+  comment: 'Bo Xing (TELUS digital) - Vancouver'
+  tags:
+    - t895608
+
+- include: create-user.yml
+  name: 't835501'
+  id: '1835501'
+  other_groups: 'wcdevelop,wcadmin'
+  comment: 'Chris Choi (TELUS digital) - Vancouver'
+  tags:
+    - t835501
+
+- include: create-user.yml
+  name: 't875949'
+  id: '1875949'
+  other_groups: 'wcdevelop,wcadmin,wcmetrics'
+  shell: '/usr/bin/zsh'
+  comment: 'Justin Scott (TELUS digital) - Vancouver'
+  tags:
+    - t875949
+
+- include: create-user.yml
+  name: 't882343'
+  id: '1882343'
+  other_groups: 'wcdevelop,wcadmin'
+  shell: '/usr/bin/zsh'
+  comment: 'Aaron Pederson (TELUS digital) - Vancouver'
+  tags:
+    - t882343
+
+- include: create-user.yml
+  name: 't864007'
+  id: '1864007'
+  other_groups: 'wcdevelop,wcadmin'
+  comment: 'Steven Harradine (TELUS digital) - Toronto'
+  tags:
+    - t864007
+
+- include: create-user.yml
+  name: 't867523'
+  id: '1867523'
+  other_groups: 'wcdevelop,wcadmin'
+  comment: 'Andrew Macrae (TELUS Digital) - Vancouver'
+  tags:
+    - t867523
+
+- include: create-user.yml
+  name: 't903182'
+  id: '1903182'
+  other_groups: 'wcdevelop,wcadmin'
+  comment: 'Wasim Hossain (TELUS digital) - Toronto'
+  tags:
+    - t903182
+

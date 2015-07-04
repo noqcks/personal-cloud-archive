@@ -1,0 +1,56 @@
+---
+- name: Configure | sudo | Improve Performance by disabling FQDN host matching
+  lineinfile:
+    state: present
+    dest: /etc/sudoers.d/disable-fqdn
+    regexp: '^Default.*fqdn'
+    line: 'Defaults !fqdn'
+    create: yes
+  tags:
+    - improves-performance
+    - reduces-security
+    - sudo
+
+- name: Configure | sudo | make sure ssh-agent works
+  lineinfile:
+    state: present
+    dest: /etc/sudoers
+    regexp: '^Defaults env_keep\+\=SSH_AUTH_SOCK'
+    line: 'Defaults env_keep+=SSH_AUTH_SOCK'
+  tags:
+    - improves-security
+    - sudo
+
+- name: Configure | SSH | Improve Performance by Disabling DNS Lookups
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^#* *UseDNS '
+    line: 'UseDNS no'
+  notify: Reload Service | SSH
+  tags:
+    - improves-performance
+    - reduces-security
+    - ssh
+
+- name: Get Instance ID
+  shell: ec2metadata | grep instance-id | cut -f 2 -d ' ' | tr -d -
+  register: instance_id
+  tags:
+    - hostname
+
+# - name: Configure | hostname
+#   hostname:
+#     name: "{{ system_role }}-{{ instance_id.stdout }}-{{ project }}-{{ environment_tier }}"
+#   tags:
+#     - hostname
+
+# - name: Configure | hostname in /etc/hosts
+#   lineinfile:
+#     state: present
+#     dest: /etc/hosts
+#     regexp: "{{ system_role }}-{{ instance_id.stdout }}-{{ project }}-{{ environment_tier }}$"
+#     line: "127.0.0.1 {{ system_role }}-{{ instance_id.stdout }}-{{ project }}-{{ environment_tier }}"
+#   tags:
+#     - improves-performance
+#     - hostname

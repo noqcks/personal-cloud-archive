@@ -1,0 +1,6 @@
+---
+- include: locales.yml
+- include: devices.yml
+- include: maintenance.yml
+- include: install.yml
+#- include: scripts.yml

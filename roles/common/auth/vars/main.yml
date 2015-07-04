@@ -1,0 +1,27 @@
+---
+auth_groups_core:
+  wcadmin:   77788
+  wcmetrics: 77789
+  wcdevelop: 77790
+
+auth_groups_vendors:
+  techsamurais:    3001000
+  nascent:         3002000
+  wmode:           3003000
+  acromedia:       3004000
+  poundandgrain:   3005000
+  vibrant:         3006000
+  powershifter:    3007000
+  havas:           3008000
+  igloo:           3009000
+  owlandfox:       3010000
+  coconutcalendar: 3011000
+  domain7:         3012000
+  graphicpeople:   3013000
+  procom:          3014000
+  publicishawkeye: 3015000
+
+auth_users_revocation:
+  - rwong
+  - x169582
+  - smaung

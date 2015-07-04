@@ -1,0 +1,7 @@
+---
+- name: Maintenance | Full System Upgrade
+  apt:
+    upgrade: full
+  tags:
+    - maintenance
+    - using-apt

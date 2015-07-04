@@ -1,0 +1,22 @@
+---
+- name: Configure | sudo | allow %wcadmin
+  lineinfile:
+    state: present
+    dest: /etc/sudoers
+    regexp: '^%wcadmin'
+    line: '%wcadmin ALL=(ALL) NOPASSWD:ALL'
+    validate: 'visudo -cf %s'
+  tags:
+    - sudo
+
+- name: "Configure | sudo |  allow {{ item }}"
+  lineinfile:
+    state: present
+    dest: /etc/sudoers
+    regexp: "^{{ item }}"
+    line: "{{ item }} ALL=(ALL) NOPASSWD:ALL"
+    validate: 'visudo -cf %s'
+  with_items: required_sudoers
+  when: environment_tier in allow_required_sudoers_in_environments
+  tags:
+    - sudo

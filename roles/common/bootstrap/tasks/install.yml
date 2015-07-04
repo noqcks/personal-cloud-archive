@@ -1,0 +1,13 @@
+---
+- name: Maintenance | Update Package Cache
+  apt:
+    update_cache: yes
+  tags:
+    - using-apt
+
+- name: Install Packages | apt
+  apt:
+    state: latest
+    pkg: "{{ item }}"
+  with_items:
+    - git

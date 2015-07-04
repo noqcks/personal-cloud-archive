@@ -1,0 +1,16 @@
+# ---
+# - name: "User | {{ comment }}"
+#   user:
+#     state: present
+#     name: "{{ name }}"
+#     uid: "{{ id }}"
+#     group: "users"
+#     groups: "{{ other_groups | default('') }}"
+#     comment: "{{ comment }}"
+#     shell: "{{ shell | default('/bin/bash') }}"
+
+# - name: "SSH Key | {{ comment }}"
+#   authorized_key:
+#     state: present
+#     user: "{{ name }}"
+#     key: "{{ lookup('file', 'public-keys/'+name+'.pub') }}"

@@ -1,0 +1,10 @@
+---
+- user:
+    state: absent
+    name: "{{ item }}"
+    remove: yes
+  with_items:
+    - auth_users_revocation
+  tags:
+    - account-revocation
+    - improves-security

@@ -1,0 +1,43 @@
+---
+# - hosts: common
+#   sudo: True
+#   roles:
+#     - role: common/main
+#       tags:
+#         - common
+
+- hosts: application
+  sudo: True
+  vars_files:
+    - vault/project/typefacist.yml 
+  roles:
+    - role: telusdigital.haproxy
+      haproxy_stats_enabled: no
+      haproxy_backend_server_direct: 127.0.0.1:3000
+      haproxy_load_balancer_enabled: no
+      haproxy_backend_server_direct: 52.8.109.208
+      tags:
+        - haproxy
+    - role: telusdigital.nodejs
+    - role: noqcks.fontforge
+      fontforge_python_enabled: yes
+      tags:
+        - fontforge
+    - role: telusdigital.upstart
+      upstart_name: typefacist
+      upstart_exec_path: /usr/bin/node
+      upstart_exec_flags:
+        - /data/www/docroot/typefacist.js
+      # upstart_start_on:
+      #   - "runlevel [2345]"
+      # upstart_stop_on:
+      #   - "runlevel [!2345]"
+    - role: telusdigital.autodeploy
+      autodeploy_repository_origin: 'git@github.org:noqcks/typefacist.git'
+      autodeploy_listener: node
+      autodeploy_restart_enabled: yes
+      autodeploy_restart_target: typefacist
+      autodeploy_for_node: yes
+      autodeploy_proxy_method: haproxy
+      tags:
+        - application
